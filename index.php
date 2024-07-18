@@ -9,10 +9,11 @@ include("scripts/connect.php")
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="data/gameCatalogData.js" defer></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<title>Gaming News | Catalog</title>
+	<title>Gaming News | Catalogue</title>
 </head>
  <body>
 	
@@ -63,14 +64,15 @@ include("scripts/connect.php")
    </div>
 </div>
 
-<div class="tos">
+<div class="tos hide">
 	<div class="tos-info">
-		<h1>Terms Of Service</h1>
-		<p>Hi there! we believe that offering an all in one platform benefits you the most, so please take a moment to read and accept or decline our Terms Of Service <a href="#">here</a> before proceeding.</p>
+		<h1>Terms Of Service & Cookies</h1>
+		<p>Hi there! As a valuable member of our community, we value your privacy and welcome you with open arms to having a look at our terms of service <a href="#">here</a>. 
+		We also encourage the use of cookies to enhance your experience, however you can choose to accept or decline this invitation.</p>
 	</div>
 	<div class="tos-buttons">
-		<button id="acceptBtn">Accept</button>
-		<button id="declineBtn">Decline</button>
+		<button class="acceptBtn" id="acceptBtn">Accept</button>
+		<button class="declineBtn" id="declineBtn">Decline</button>
 	</div>
 </div>
 <footer>
@@ -79,5 +81,6 @@ include("scripts/connect.php")
 	</div>
 
 </footer>
+<script type="text/javascript" src="scripts/cookieHandler.js"></script>
     </body>
 </html> 

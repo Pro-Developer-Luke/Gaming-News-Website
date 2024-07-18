@@ -79,9 +79,9 @@ nav h1{
 
 .tos{
     display: flex;
-    width: 100%;
     background-color: #eee;
     position: sticky;
+    justify-content: space-between;
     bottom: 0;
     -webkit-box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
     -moz-box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
@@ -99,7 +99,8 @@ margin-bottom: 0;
 .tos-info{   
     display: flex;
     flex-direction: column;
-    padding-inline: 10px;
+    justify-content: center;
+    padding: 10px;
 }
 
 .tos-info a{
@@ -111,8 +112,9 @@ margin-bottom: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: auto;
-    width: 50%;
+    flex-grow: 1;
+    min-width: 300px;
+
 }
 .tos-buttons button{
     width: 40%;
@@ -132,6 +134,14 @@ margin-bottom: 0;
 @media only screen and (max-width: 1000px) {
     .tos {
          flex-direction: column;
+    }
+
+    .tos-info{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
     }
 
     .tos-buttons{
