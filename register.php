@@ -25,10 +25,10 @@ require("scripts/accHandler.php")
 		<nav>
 			<img src="assets/GC_LOGO.png" alt="">
 				<ul>
-					<li><a  href="index.php"><i class="fa-solid fa-house"></i>Home</a></li>
-					<li><a href="logout.php"><i class="fa-solid fa-right-to-bracket"></i>Logout</a></li>
-					<li><a class="selected" href="login.php"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
-					<li><a href="settings.php"><i class="fa fa-gear"></i>Settings</a></li>
+				<li><a href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
+				<li><a href="login.php"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
+				<li><a href="settings.php"><i class="fa fa-gear"></i>Settings</a></li>
+				<li><a href="settings.php"><i class="fa-solid fa-question"></i> About</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -39,17 +39,18 @@ require("scripts/accHandler.php")
 		<h2 class="formTitle">Sign Up</h2>
 		<?php 
 	$fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	if(strpos($fullUrl, "error=userexists") == true){
+		echo "<p class='formMessage formMessage--error'>Sorry, that username is already taken.</p>";
+	}
+	
 	if(strpos($fullUrl, "error=emailexists") == true){
-		echo "<p class='formMessage formMessage--error'>Email already used with an existing account !</p>";
+		echo "<p class='formMessage formMessage--error'>That email is associated with an existing account. <a style='color: rgb(170, 6, 0);' href='login.php'>Click to sign in</a>.</p>";
 	}
 
 	if(strpos($fullUrl, "error=confirmpassword") == true){
-		echo "<p class='formMessage formMessage--error'>Passwords do not match !</p>";
+		echo "<p class='formMessage formMessage--error'>Passwords did not match.</p>";
 	}
 
-	if(strpos($fullUrl, "error=userexists") == true){
-		echo "<p class='formMessage formMessage--error'>Sorry, Username is already taken !</p>";
-	}
 	?>
 		<div class="formInputGroup">
 			<input type="text" name="username" id="signupUserName" class="formInput" autofocus placeholder="Username" required>

@@ -23,13 +23,13 @@ require("scripts/accHandler.php")
 		<nav>
 			<img src="assets/GC_LOGO.png" alt="">
 				<ul>
-					<li><a class="selected" href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
+					<li><a href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
 					<?php
 					 if(isset($_SESSION['username'])){
 						echo "<li><a href='scripts/logout.php'><i class='fa-solid fa-right-to-bracket'></i> Logout</a></li>";
 					 } 
 					 else{
-						echo "<li><a href='login.php'><i class='fa-solid fa-right-to-bracket'></i> Login</a></li>";
+						echo "<li><a class='selected' href='login.php'><i class='fa-solid fa-right-to-bracket'></i> Login</a></li>";
 					 }
 					 ?>
 					<li><a href="settings.php"><i class="fa fa-gear"></i> Settings</a></li>
@@ -45,16 +45,14 @@ require("scripts/accHandler.php")
 		<?php 
 	$fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	if(strpos($fullUrl, "login=nouser") == true){
-		echo "<p class='formMessage formMessage--error'>User does not exist !</p>";
+		echo "<p class='formMessage formMessage--error'>User not found.</p>";
 	}
 	?>
 		<div class="formInputGroup">
 			<input type="email" class="formInput" name="email" id="loginEmail" autofocus placeholder="Email" required>
-			<div class="formInputErrorMessage"></div>
 		</div>
 		<div class="formInputGroup">
 			<input type="password" class="formInput" name="password" id="password" autofocus placeholder="Password" required>
-			<div class="formInputErrorMessage"></div>
 		</div>
 		<div class="hidePasswordBtn">
 		<a><i onclick="togglePass()" class="fa-solid fa-eye-slash" id="eyeIcon"></i></a>

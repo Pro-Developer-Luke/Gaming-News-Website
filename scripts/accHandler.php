@@ -67,4 +67,24 @@ if(isset($_POST['signInBtn'])){
     }
 }
 
+if(isset($_POST['resetPassBtn'])){
+    $email=$_POST['email'];
+
+    if(empty($email)){
+        header("Location: ../passwordreset.php?error=empty");
+        exit();
+    }
+
+    $sql="SELECT * FROM users WHERE email='$email'";
+    $result=$conn->query($sql);
+    if($result->num_rows>0){
+        header("Location: ../passwordreset.php?success=resetconf&email=$email");
+        exit();
+    }
+    else{
+        header("Location: ../passwordreset.php?error=noemail");
+        exit();
+    }
+}
+
 ?>
