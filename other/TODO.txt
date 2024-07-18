@@ -1,0 +1,10 @@
+===NAVBAR===
+- Make responsive / fix when window is shortened
+
+- Remove logout tab / put logout function in a drop down in the settings tab
+
+
+===TOS===
+- Make buttons close div / save value as a cookie
+
+

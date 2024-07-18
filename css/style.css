@@ -1,0 +1,476 @@
+/*/FONTS/*/
+@font-face{
+    font-family: 'arial';
+    src:  url(../fonts/arialn.ttf);
+}
+
+@font-face{
+    font-family: 'agency';
+    src:  url(../fonts/AGENCYR.TTF);
+}
+/*/===============================/*/
+
+/*/GENERAL/*/
+/*Overall container*/
+
+body{
+    margin:  0;
+    font-family: 'arial';
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 40px;
+}
+
+/*Navbar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 75px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+nav img{
+    width: 100px;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+nav li{
+margin-left: 25%;
+}
+
+nav a{
+    text-align: center;
+    color: #ed6f9f;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+nav a:hover{
+    color: #ec8575;
+    transition: 0.5s;
+}
+.selected{
+    color: #ec8575;
+}
+nav h1{
+    font-size: 30px;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 5px;
+    color: #ec8b6b;
+    margin-left: 20px;
+}
+
+.tos{
+    display: flex;
+    width: 100%;
+    background-color: #eee;
+    position: sticky;
+    bottom: 0;
+    -webkit-box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
+    box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
+
+}
+
+.tos h1{
+    font-size: 30px;
+font-family: 'arial';
+font-weight: normal;
+margin-bottom: 0;
+}
+
+.tos-info{   
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10px;
+}
+
+.tos-info a{
+    text-decoration: underline;
+    color: #000;
+}
+
+.tos-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    width: 50%;
+}
+.tos-buttons button{
+    width: 40%;
+    height: 50px;
+    color: #000;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #d97757, #ed6e9f);
+}
+
+.tos-buttons button:hover{
+    color: white;
+    transition: .5s;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tos {
+         flex-direction: column;
+    }
+
+    .tos-buttons{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tos-buttons button{
+        margin-right: 0px;
+        width: 35%;
+
+    }
+  }
+
+.footerwrapper{
+    padding: 10px;
+}
+/*Background*/
+
+.slogan{
+    background-image: url(../assets/gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.slogan h2{
+font-size: 30px;
+font-family: 'arial';
+color: #FFF;
+letter-spacing: 5px;
+font-weight: normal;
+margin-top: 80px;
+margin-bottom: 0;
+}
+
+.slogan p{
+font-size: 25px;
+font-family: 'agency';
+color: #FFF;
+font-weight: normal;
+letter-spacing: 5px;
+}
+
+/*Search Bar*/
+.search-container{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 75%;
+    background-color: #fff;  
+    border-radius: 40px;
+    padding: 5px;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #d97757, #ed6e9f) border-box;
+}
+
+.search-box a{
+    color: white;
+    text-decoration: none;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #d97757, #ed6e9f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+/*/===============================/*/
+
+/*/INDEX/*/
+/*Game categories*/
+
+h3{
+    display: flex;
+    justify-content: center;
+    color: #999999;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.game-categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.gamecard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gamecard h2{
+display: none;
+}
+
+.game-categories .gamecard img{   
+    padding: 5px;
+    width: 310px;
+    height: 360px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1.0);
+    
+}
+
+.game-categories .gamecard img:hover{
+    transition: .3s;
+    background-color: #d97757;
+    box-shadow: 0 10px 20px #d97757;
+}
+
+label{
+display: none;
+}
+
+/*/CHEATS/*/
+.gamecheat{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-content: center;
+    align-items: center;
+
+}
+
+.cheatcat{
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1.0);
+    margin-bottom: 100px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background-image: url(../assets/cheatcovers/warzone.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  background-size: 100% 100%;
+
+}
+
+.cheatcard{
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    margin-bottom: 100px;
+    width: 100%;
+    height: 360px;
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #d97757, #ed6e9f) border-box;
+    margin: auto;
+    display: inline-block;
+    max-width: 32%;
+    cursor: pointer;
+}
+
+.cheatcardcontent img{
+border-radius: 30px;
+margin-top: 0;
+background-position: center center;
+background-size: cover;
+}
+
+.cheatcarddetails p{
+    color: #000;
+    font-size: 22px;
+}
+
+.cheatcarddetails{
+    border: 2px solid #b5b5b5;
+    border-right: 10px;
+    border-radius: 50px;
+    width: 75%;
+    margin: auto;
+    
+}
+
+.loginwrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logincontainer{
+      font-size: 18px;
+     font-family: 'arial', sans-serif;
+        width: 400px;
+        max-width: 400px;
+        margin: 1rem;
+        padding: 2rem;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        background-color: #fff;
+    }
+    
+    .logincontainer .formTitle{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .logincontainer .formMessage{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .logincontainer .formMessage--success{
+        color: green;
+    }
+    
+    .logincontainer .formMessage--error{
+        color: rgb(170, 6, 0);
+    }
+    
+    .logincontainer .formInputGroup{
+        margin-bottom: 1rem;
+    }
+    
+    .logincontainer .formInput{
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        box-sizing: border-box;
+        border-radius: 30px;
+        border: 1.5px solid #ddd;
+        outline: none;
+        background: #eee;
+        transition: 0.2s;
+    }
+    
+    .logincontainer .formInput:focus{
+        border-color: #ec8b6b;
+        background: #fff;
+    }
+    
+    .logincontainer .formInputSuccess{
+        color: darkgreen;
+        border-color: darkgreen;
+    }
+
+    .logincontainer .hidePasswordBtn i{
+        color:#d97757;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    
+    
+    .logincontainer .formSubmit{
+        transition: 0.2s;
+        width: 100%;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+        background: linear-gradient(to right, #d97757, #ed6e9f);
+        font-size: 18px;
+    }
+    
+    .logincontainer .formSubmit:hover{
+        transition: 0.2s;
+        background: linear-gradient(to right, #d97757, #ed6e9f);
+        font-size: 25px;
+    
+    }
+    
+    .logincontainer .formSubmit:active{
+        transition: 0.2s;
+        background: linear-gradient(to right, #d97757, #ed6e9f);
+        font-size: 22px;
+    
+    }
+    
+    .logincontainer .formText{
+        text-align: center;
+    }
+    
+    .logincontainer .formLink{
+        color: #d97757;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .logincontainer .formLink:hover{
+        text-decoration: underline;
+    }
+
