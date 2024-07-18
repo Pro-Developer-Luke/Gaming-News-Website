@@ -13,7 +13,7 @@ require("scripts/accHandler.php")
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	
 	
-	<title>GameCheats</title> 
+	<title>Gameing News | Register</title> 
 </head>
  <body style="background: linear-gradient(to right, #d97757, #ed6e9f);
  background-attachment: fixed;
