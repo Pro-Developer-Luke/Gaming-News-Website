@@ -12,9 +12,7 @@ require("scripts/accHandler.php")
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<script src="scripts/togglepass.js"></script>
-	
-	
-	<title>GameCheats</title> 
+	<title>Gaming News | Login</title> 
 </head>
  <body style="background: linear-gradient(to right, #d97757, #ed6e9f);
  background-attachment: fixed;

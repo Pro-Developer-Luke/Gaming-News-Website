@@ -11,7 +11,7 @@ include("scripts/connect.php")
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<title>MODS.COM</title>
+	<title>Gaming News</title>
 </head>
 <div class="slogan">
 	<h2>GAMING NEWS</h2>
