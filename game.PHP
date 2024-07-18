@@ -47,47 +47,13 @@ include("scripts/connect.php")
    </div>
 </header>
 <div class="wrapper">
-	<h3>Warzone Cheats</h3>
+	<h3>Warzone</h3>
 	<div class="search-container">
 		<div class="search-box">
-				<input class="search-text" id="search-item" type="text" placeholder="Search Specific Cheats or Creators" onkeyup="search()">
+				<input class="search-text" id="search-item" type="text" placeholder="Search Specific Articles or Authors" onkeyup="search()">
 				<a class="search-btn" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
 		</div>
-		</div>
-<br><br><br>
-	
-	<p>Premium cheats</p>
-   	<div class="gamecheat">
-   		<div class="cheatcat">
-   			<div class="cheatcard">
-   				<div class="cheatcardcontent">
-   						<img src="../assets/cheatcovers/newcheat.jpg">
-   						<div hidden class="cheatcarddetails">
-   						</div>
-   				</div>
-   			</div>
-
-   			<div class="cheatcard">
-   				<div class="cheatcardcontent">
-   					
-   				</div>
-   			</div>
-
-   			<div class="cheatcard">
-   				<div class="cheatcardcontent">
-   					
-   				</div>
-   			</div>
-   		</div>
 	</div>
-
-	<p>Free cheats</p>
-   	<div class="gamecheat">
-   		<div class="cheatcat">
-
-   		</div>
-	</div>
-
 
 </div>
     </body>

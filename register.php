@@ -14,7 +14,7 @@ require("scripts/accHandler.php")
 	<script src="scripts/togglepass.js"></script>
 	
 	
-	<title>GameCheats</title> 
+	<title>Gaming News | Register</title> 
 </head>
  <body style="background: linear-gradient(to right, #d97757, #ed6e9f);
  background-attachment: fixed;

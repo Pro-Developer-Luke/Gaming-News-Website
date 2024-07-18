@@ -24,7 +24,7 @@ include("scripts/connect.php")
 			echo $_SESSION['username'];
 		 } 
 		 else{
-			echo "No session";
+			echo "No session (Testing)";
 		 }
 	
 		 ?>
