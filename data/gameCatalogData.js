@@ -3,58 +3,68 @@
 const titleData =[
     {
     titlename : "Warzone",
-    titleimg : "assets/gamecovers/warzone.jpg"
+    titleimg : "assets/gamecovers/warzone.jpg",
+    titletags : ["Warzone "]
     },
 
     {
-    titlename : "Grand Theft Auto V | GTAV",
-    titleimg : "assets/gamecovers/gtav.jpg"
+    titlename : "Grand Theft Auto V",
+    titleimg : "assets/gamecovers/gtav.jpg",
+    titletags : ["GTAV ", "GTA5 ","Grand Theft Auto V "]
     },
 
     {
     titlename : "Fortnite",
-    titleimg : "assets/gamecovers/fortnite.jpg"
+    titleimg : "assets/gamecovers/fortnite.jpg",
+    titletags : ["Fortnite "]
     },    
 
     {
     titlename : "Hello Neighbor",
-    titlepage : "hneighbor.html",
-    titleimg : "assets/gamecovers/hneighbor.jpg"
+    titleimg : "assets/gamecovers/hneighbor.jpg",
+    titletags : ["Hello Neighbor "]
     },
 
     {
     titlename : "Overwatch",
-    titleimg : "assets/gamecovers/overwatch.jpg"
+    titleimg : "assets/gamecovers/overwatch.jpg",
+    titletags : ["Overwatch 1"]
     },
 
     {
     titlename : "UFC 4",
-    titleimg : "assets/gamecovers/ufc4.png"
+    titleimg : "assets/gamecovers/ufc4.png",
+    titletags : ["UFC 4"]
     },
 
     {
-    titlename : "roblox",
-    titleimg : "assets/gamecovers/roblox.jpg"
+    titlename : "Roblox",
+    titleimg : "assets/gamecovers/roblox.jpg",
+    titletags : ["Roblox"]
     },
 
     {
-    titlename : "Player Unknown Battlegrounds | PUBG",
-    titleimg : "assets/gamecovers/pubg.jpg"
+    titlename : "Player Unknown Battlegrounds",
+    titleimg : "assets/gamecovers/pubg.jpg",
+    titletags : ["Player Unkown Battlegrounds", "PUBG"]
     },
 
     {
     titlename : "Cyberpunk",
-    titleimg : "assets/gamecovers/cyberpunk.jpg"
+    titleimg : "assets/gamecovers/cyberpunk.jpg",
+    titletags : ["Cyberpunk 2077"]
     },
 
     {
-    titlename : "valorant",
-    titleimg : "assets/gamecovers/valorant.jpg"
+    titlename : "Valorant",
+    titleimg : "assets/gamecovers/valorant.jpg",
+    titletags : ["Valorant"]
     },
 
     {
-    titlename : "rust",
-    titleimg : "assets/gamecovers/rust.jpg"
+    titlename : "Rust",
+    titleimg : "assets/gamecovers/rust.jpg",
+    titletags : ["Rust"]
     }
 ]
 
@@ -63,6 +73,7 @@ document.getElementById("game-categories").innerHTML = `${titleData.map(function
     return `
    	<div class="gamecard">
     <h2 class="title-name">${title.titlename}</h2>
+    <p class="title-tags">${title.titletags}</p>
 	<a class="title-page" href="game.php?${title.titlename}" ">
    	<img class="title-img" src="${title.titleimg}">	
    	</a>
@@ -73,13 +84,12 @@ document.getElementById("game-categories").innerHTML = `${titleData.map(function
 const search = () =>{
     
     const searchbox = document.getElementById("search-item").value.toUpperCase();
-    const titleitems = document.getElementById("game-categories")
     const titlesel = document.querySelectorAll(".gamecard");
-    const tname = document.getElementsByTagName("h2");
+    const tname = document.getElementsByTagName("p");
 
 
     for(var i=0; i < tname.length; i++){
-        let match = titlesel[i].getElementsByTagName('h2')[0];
+        let match = titlesel[i].getElementsByTagName('p')[0];
 
         if(match){
            let textvalue = match.textContent || match.innerHTML

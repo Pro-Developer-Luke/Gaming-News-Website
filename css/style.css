@@ -273,6 +273,10 @@ h3{
 display: none;
 }
 
+.gamecard p{
+    display: none;
+    }
+
 .game-categories .gamecard img{   
     padding: 5px;
     width: 310px;
@@ -388,11 +392,11 @@ background-size: cover;
         margin-bottom: 1rem;
     }
     
-    .logincontainer .formMessage--success{
+    .formMessage--success{
         color: green;
     }
     
-    .logincontainer .formMessage--error{
+    .formMessage--error{
         color: rgb(170, 6, 0);
     }
     
