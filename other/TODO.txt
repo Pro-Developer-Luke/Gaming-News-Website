@@ -5,6 +5,6 @@
 
 
 ===TOS===
-- Make buttons close div / save value as a cookie
+- Make a terms of service page
 
 
