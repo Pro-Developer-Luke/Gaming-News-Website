@@ -63,11 +63,11 @@ nav a{
     flex-direction: column;
 }
 nav a:hover{
-    color: #ec8575;
+    color: #ec8b6b;
     transition: 0.5s;
 }
 .selected{
-    color: #ec8575;
+    color: #ec8b6b;
 }
 nav h1{
     font-size: 30px;
@@ -255,14 +255,17 @@ letter-spacing: 5px;
 /*/INDEX/*/
 /*Game categories*/
 
-h3{
+.pageTitle{
     display: flex;
     justify-content: center;
-    color: #999999;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
+
+    background: -webkit-linear-gradient(#d97757, #ec8b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .game-categories{
