@@ -1,7 +1,7 @@
 /*/FONTS/*/
 @font-face{
     font-family: 'arial';
-    src:  url(../fonts/arialn.ttf);
+    src:  url(../fonts/arial.ttf);
 }
 
 @font-face{
@@ -157,7 +157,14 @@ margin-bottom: 0;
   }
 
 .footerwrapper{
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ccc;
+}
+
+.footerCol{
+   background-color:#d97757;
 }
 /*Background*/
 
@@ -425,4 +432,6 @@ display: none;
     .logincontainer .formLink:hover{
         text-decoration: underline;
     }
+
+
 

@@ -11,7 +11,39 @@ include("php/connect.php")
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<script type="text/javascript" src="js/functions.js"></script>
+
 	<title>Gaming News</title>
+
+	<script>
+
+		function getQueryParams() 
+		{
+            let params = {};
+            let queryString = window.location.search.substring(1);
+            let queryArray = queryString.split('&');
+            for (let i = 0; i < queryArray.length; i++) {
+                let pair = queryArray[i].split('=');
+                params[pair[0]] = decodeURIComponent(pair[1]);
+            }
+            return params;
+        }
+
+		function displayTitle() {
+            let params = getQueryParams();
+            let title = params.title; // Get the 'title' parameter
+            let titleElement = document.getElementById('dynamic-title');
+
+            if (title) {
+                titleElement.textContent = title; // Update the content of the <h3> tag
+            } else {
+                titleElement.textContent = 'Default Title'; // Default title if no parameter is provided
+            }
+        }
+		
+
+		window.onload = displayTitle;
+	</script>
 </head>
 <div class="slogan">
 	<h2>GAMING NEWS</h2>
@@ -29,7 +61,7 @@ include("php/connect.php")
   <header>
    <div class="header">
    <nav>
-	   <img src="assets/GC_LOGO.png" alt="">
+   <a href="index.php"><img src="assets/GC_LOGO.png" alt=""></a>
 		   <ul>
 			   <li><a class="selected" href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
 			   <?php
@@ -47,7 +79,7 @@ include("php/connect.php")
    </div>
 </header>
 <div class="wrapper">
-	<h3 class="pageTitle">Warzone</h3>
+	<h3 class="pageTitle" id="dynamic-title">Warzone</h3>
 	<div class="search-container">
 		<div class="search-box">
 				<input class="search-text" id="search-item" type="text" placeholder="Search Specific Articles or Authors" onkeyup="search()">

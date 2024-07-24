@@ -13,6 +13,8 @@ include("php/connect.php")
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	
+	
 	<title>Gaming News | Catalogue</title>
 </head>
  <body>
@@ -33,7 +35,7 @@ include("php/connect.php")
 	   <header>
 		<div class="header">
 		<nav>
-			<img src="assets/GC_LOGO.png" alt="">
+			<a href="index.php"><img src="assets/GC_LOGO.png" alt=""></a>
 				<ul>
 					<li><a class="selected" href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
 					<?php
@@ -77,7 +79,45 @@ include("php/connect.php")
 </div>
 <footer>
 	<div class="footerwrapper">
-		<H1>THIS IS THE FOOTER</H1>
+		<div class="footerCol">
+			<h1 class="footerTitle">NEWS</h1>
+			<ul>
+				<li><a href="#">Latest news articles</a></li>
+                <li><a href="#">Popular games</a></li>
+                <li><a href="#">Game reviews</a></li>
+                <li><a href="#">Community forums</a></li>
+            </ul>	 
+		</div>
+
+		<div class="footerCol">
+            <h1 class="footerTitle">ABOUT</h1>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>     
+        </div>
+		
+        <div class="footerCol">
+            <h1 class="footerTitle">FOLLOW US</h1>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+            </ul>    
+        </div>
+
+		<div class="footerCol">
+            <h1 class="footerTitle">SUPPORT</h1>
+            <ul>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Report a bug</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>    
+        </div>
 	</div>
 
 </footer>

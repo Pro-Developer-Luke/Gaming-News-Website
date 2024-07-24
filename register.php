@@ -23,7 +23,7 @@ require("php/accHandler.php")
 	<header>
 		<div class="header">
 		<nav>
-			<img src="assets/GC_LOGO.png" alt="">
+		<a href="index.php"><img src="assets/GC_LOGO.png" alt=""></a>
 				<ul>
 				<li><a href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
 				<li><a href="login.php"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>

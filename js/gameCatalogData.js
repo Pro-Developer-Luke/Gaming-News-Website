@@ -74,7 +74,7 @@ document.getElementById("game-categories").innerHTML = `${titleData.map(function
    	<div class="gamecard">
     <h2 class="title-name">${title.titlename}</h2>
     <p class="title-tags">${title.titletags}</p>
-	<a class="title-page" href="game.php?${title.titlename}" ">
+	<a class="title-page" href="game.php?title=${title.titlename}" ">
    	<img class="title-img" src="${title.titleimg}">	
    	</a>
     </div>`
@@ -103,8 +103,6 @@ const search = () =>{
         }
     }
 }
-
-
 
 
 

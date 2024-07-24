@@ -10,4 +10,4 @@ function togglePass() {
       passBox.type = "password";
       confPassBox.type = "password";
     }
-  }
+}
