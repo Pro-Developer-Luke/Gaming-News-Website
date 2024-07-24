@@ -1,5 +1,5 @@
 <?php
-require("scripts/accHandler.php")
+require("php/accHandler.php")
 
 ?>
 
@@ -11,7 +11,7 @@ require("scripts/accHandler.php")
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<script src="scripts/togglepass.js"></script>
+	<script src="js/functions.js"></script>
 	
 	
 	<title>Gaming News | Register</title> 
@@ -35,7 +35,7 @@ require("scripts/accHandler.php")
 	</header>
 	<div class="loginwrapper">
 <div class="logincontainer">
-	<form action="scripts/accHandler.php" method="post" id="formSignup">
+	<form action="php/accHandler.php" method="post" id="formSignup">
 		<h2 class="formTitle">Sign Up</h2>
 		<?php 
 	$fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";

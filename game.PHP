@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("scripts/connect.php")
+include("php/connect.php")
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ include("scripts/connect.php")
 			   <li><a class="selected" href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
 			   <?php
 				if(isset($_SESSION['username'])){
-				   echo "<li><a href='scripts/logout.php'><i class='fa-solid fa-right-to-bracket'></i> Logout</a></li>";
+				   echo "<li><a href='php/logout.php'><i class='fa-solid fa-right-to-bracket'></i> Logout</a></li>";
 				} 
 				else{
 				   echo "<li><a href='login.php'><i class='fa-solid fa-right-to-bracket'></i> Login</a></li>";
@@ -47,7 +47,7 @@ include("scripts/connect.php")
    </div>
 </header>
 <div class="wrapper">
-	<h3>Warzone</h3>
+	<h3 class="pageTitle">Warzone</h3>
 	<div class="search-container">
 		<div class="search-box">
 				<input class="search-text" id="search-item" type="text" placeholder="Search Specific Articles or Authors" onkeyup="search()">

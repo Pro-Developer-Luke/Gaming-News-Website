@@ -1,5 +1,5 @@
 <?php
-require("scripts/accHandler.php")
+require("php/accHandler.php")
 
 ?>
 
@@ -35,7 +35,7 @@ require("scripts/accHandler.php")
 	<div class="loginwrapper">
 <div class="logincontainer">
 	</form>
-	<form method="post" action="scripts/accHandler.php" id="formPassReset">
+	<form method="post" action="php/accHandler.php" id="formPassReset">
 		<h2 class="formTitle">Password Reset</h2>
 		<?php 
 	$fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -59,5 +59,5 @@ require("scripts/accHandler.php")
 </div> 	
 </div>
     </body>
-<script src="scripts/loginManagement.js"></script>
+<script src="js/loginManagement.js"></script>
 </html> 

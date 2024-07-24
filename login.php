@@ -1,5 +1,5 @@
 <?php
-require("scripts/accHandler.php")
+require("php/accHandler.php")
 
 ?>
 
@@ -11,7 +11,7 @@ require("scripts/accHandler.php")
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<script src="scripts/togglepass.js"></script>
+	<script src="js/functions.js"></script>
 	<title>Gaming News | Login</title> 
 </head>
  <body style="background: linear-gradient(to right, #d97757, #ed6e9f);
@@ -26,7 +26,7 @@ require("scripts/accHandler.php")
 					<li><a href="index.php"><i class="fa-solid fa-gamepad"></i> Games</a></li>
 					<?php
 					 if(isset($_SESSION['username'])){
-						echo "<li><a href='scripts/logout.php'><i class='fa-solid fa-right-to-bracket'></i> Logout</a></li>";
+						echo "<li><a href='php/logout.php'><i class='fa-solid fa-right-to-bracket'></i> Logout</a></li>";
 					 } 
 					 else{
 						echo "<li><a class='selected' href='login.php'><i class='fa-solid fa-right-to-bracket'></i> Login</a></li>";
@@ -40,11 +40,11 @@ require("scripts/accHandler.php")
 	</header>
 	<div class="loginwrapper">
 <div class="logincontainer">
-	<form action="scripts/accHandler.php" method="post" id="formLogin">
+	<form action="php/accHandler.php" method="post" id="formLogin">
 		<h2 class="formTitle">Sign In</h2>
 		<?php 
 	$fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if(strpos($fullUrl, "login=nouser") == true){
+	if(strpos($fullUrl, "error=nouser") == true){
 		echo "<p class='formMessage formMessage--error'>User not found.</p>";
 	}
 	?>
