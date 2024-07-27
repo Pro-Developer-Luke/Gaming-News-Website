@@ -11,7 +11,10 @@ include("php/connect.php")
 	<script type="text/javascript" src="js/gameCatalogData.js" defer></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	
 	
@@ -65,7 +68,7 @@ include("php/connect.php")
 
    </div>
 </div>
-
+<br><br><br>
 <div class="tos hide">
 	<div class="tos-info">
 		<h1>Terms Of Service & Cookies</h1>
@@ -83,39 +86,39 @@ include("php/connect.php")
 			<h1 class="footerTitle">NEWS</h1>
 			<ul>
 				<li><a href="#">Latest news articles</a></li>
+				<li><a href="#">Community forums</a></li>
                 <li><a href="#">Popular games</a></li>
                 <li><a href="#">Game reviews</a></li>
-                <li><a href="#">Community forums</a></li>
             </ul>	 
 		</div>
 
 		<div class="footerCol">
             <h1 class="footerTitle">ABOUT</h1>
             <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact us</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li> 
             </ul>     
         </div>
 		
         <div class="footerCol">
             <h1 class="footerTitle">FOLLOW US</h1>
             <ul>
-                <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>                
                 <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>    
             </ul>    
         </div>
 
 		<div class="footerCol">
             <h1 class="footerTitle">SUPPORT</h1>
             <ul>
+				<li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Help & Support</a></li>
                 <li><a href="#">Report a bug</a></li>
                 <li><a href="#">Contact us</a></li>
-                <li><a href="#">Terms of Service</a></li>
             </ul>    
         </div>
 	</div>
