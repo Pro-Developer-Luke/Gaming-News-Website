@@ -1,27 +1,24 @@
-/*/FONTS/*/
-@font-face{
+/* FONTS */
+@font-face {
     font-family: 'agency';
-    src:  url(../fonts/AGENCYR.TTF);
+    src: url(../fonts/AGENCYR.TTF);
 }
-/*/===============================/*/
 
-/*/GENERAL/*/
-/*Overall container*/
-
-body{
-    margin:  0;
+/* GENERAL */
+/* Overall container */
+body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     margin-inline: 40px;
 }
 
-/*Navbar*/
-nav{
+/* Navbar */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,23 +29,23 @@ nav{
     width: 100%;
 }
 
-nav img{
+nav img {
     width: 100px;
     padding: 20px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
-    justify-content: right;
+    justify-content: flex-end;
     margin-right: 15px;
 }
 
-nav li{
-margin-left: 25%;
+nav li {
+    margin-left: 25%;
 }
 
-nav a{
+nav a {
     text-align: center;
     color: #ed6f9f;
     text-decoration: none;
@@ -56,15 +53,15 @@ nav a{
     font-size: 1rem;
     display: flex;
     flex-direction: column;
+    transition: color 0.5s;
 }
-nav a:hover{
+
+nav a:hover,
+.selected {
     color: #ec8b6b;
-    transition: 0.5s;
 }
-.selected{
-    color: #ec8b6b;
-}
-nav h1{
+
+nav h1 {
     font-size: 30px;
     font-family: 'Gemunu Libre', sans-serif;
     letter-spacing: 5px;
@@ -72,131 +69,110 @@ nav h1{
     margin-left: 20px;
 }
 
-.tos{
+/* Terms of Service */
+.tos {
     display: flex;
     background-color: #eee;
     position: sticky;
     justify-content: space-between;
     bottom: 0;
-    -webkit-box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
-    -moz-box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
-    box-shadow: -2px -8px 16px -2px rgba(0,0,0,0.6);
-
+    box-shadow: -2px -8px 16px -2px rgba(0, 0, 0, 0.6);
 }
 
-.tos h1{
+.tos h1 {
     font-size: 30px;
-font-family: 'arial';
-font-weight: normal;
-margin-bottom: 0;
+    font-family: 'arial';
+    font-weight: normal;
+    margin-bottom: 0;
 }
 
-.tos-info{   
+.tos-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
 }
 
-.tos-info a{
+.tos-info a {
     text-decoration: underline;
     color: #000;
 }
 
-.tos-buttons{
+.tos-buttons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-grow: 1;
     min-width: 300px;
-
 }
-.tos-buttons button{
+
+.tos-buttons button {
     width: 40%;
     height: 50px;
     color: #000;
-    border: 0px;
+    border: 0;
     border-radius: 5px;
     cursor: pointer;
     background: linear-gradient(to right, #ec8b6b, #ed6f9f);
+    transition: color 0.5s;
 }
 
-.tos-buttons button:hover{
+.tos-buttons button:hover {
     color: white;
-    transition: .5s;
 }
 
-@media only screen and (max-width: 1000px) {
-    .tos {
-         flex-direction: column;
-    }
-
-    .tos-info{   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .tos-buttons{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .tos-buttons button{
-        margin-right: 0px;
-        width: 35%;
-
-    }
-  }
-
-.footerwrapper{
+/* Footer */
+.footerwrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #f3f3f3;
-
 }
 
-.footerCol{
-   width: auto;
-   padding: 20px;
-   text-align: center;
+.footerCol {
+    width: auto;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
 }
 
-.footerCol .footerTitle{
-    background: linear-gradient(0.25turn, #ec8b6b, #ed6f9f); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.footerCol .footerTitle {
+    background: linear-gradient(0.25turn, #ec8b6b, #ed6f9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
 }
 
-
-.footerCol ul{
+.footerCol ul {
     padding: 0;
 }
 
-.footerCol li, .footerCol a{
+.footerCol li,
+.footerCol a {
     list-style: none;
     color: black;
     text-decoration: none;
-
 }
 
-.footerCol li a:hover{
+.footerCol li a:hover {
     color: #ec8b6b;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
-@media only screen and (max-width: 870px) {
-    .footerwrapper{
-        flex-wrap: wrap;
-    }
-  }
+.footerCol .divider-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
-/*Background*/
+.footerCol .divider {
+    background: linear-gradient(to right, #ec8b6b, #ed6f9f);
+    width: 25px;
+    height: 5px;
+}
 
-.slogan{
+/* Background */
+.slogan {
     background-image: url(../assets/gradient.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,33 +180,33 @@ margin-bottom: 0;
     height: 250px;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     position: relative;
     top: 0;
 }
 
-.slogan h2{
-font-size: 30px;
-font-family: 'arial';
-color: #FFF;
-letter-spacing: 5px;
-font-weight: normal;
-margin-top: 80px;
-margin-bottom: 0;
+.slogan h2,
+.slogan p {
+    font-family: 'arial';
+    color: #FFF;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin: 0;
 }
 
-.slogan p{
-font-size: 25px;
-font-family: 'agency';
-color: #FFF;
-font-weight: normal;
-letter-spacing: 5px;
+.slogan h2 {
+    font-size: 30px;
+    margin-top: 80px;
 }
 
-/*Search Bar*/
-.search-container{
+.slogan p {
+    font-size: 25px;
+    font-family: 'agency';
+}
+
+/* Search Bar */
+.search-container {
     margin-bottom: 20px;
     width: 100%;
     display: flex;
@@ -238,25 +214,24 @@ letter-spacing: 5px;
     align-items: center;
 }
 
-.search-box{
+.search-box {
     display: flex;
     align-items: center;
     height: 40px;
     width: 75%;
-    background-color: #fff;  
+    background-color: #fff;
     border-radius: 40px;
     padding: 5px;
     border: 2px solid transparent;
-    background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, #ec8b6b, #ed6f9f) border-box;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #ec8b6b, #ed6f9f) border-box;
 }
 
-.search-box a{
+.search-box a {
     color: white;
     text-decoration: none;
 }
 
-.search-btn{
+.search-btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -264,68 +239,57 @@ letter-spacing: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 0;
 }
 
-.search-text{
+.search-text {
     border: none;
     background: none;
     outline: none;
-    float: left;
-    padding: 0;
     color: black;
     font-size: 16px;
     line-height: 40px;
-    width: 0px;
     width: 100%;
     margin-left: 10px;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-/*/===============================/*/
-
-/*/INDEX/*/
-/*Game categories*/
-
-.pageTitle{
+/* INDEX */
+/* Game categories */
+.pageTitle {
     display: flex;
     justify-content: center;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
-
     background: -webkit-linear-gradient(#ec8b6b, #ec8b6b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.game-categories{
+.game-categories {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
-.gamecard{
+.gamecard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
 }
 
-.gamecard h2{
-display: none;
+.gamecard h2,
+.gamecard p,
+label {
+    display: none;
 }
 
-.gamecard p{
-    display: none;
-    }
-
-.game-categories .gamecard img{   
+.game-categories .gamecard img {
     padding: 5px;
     width: 310px;
     height: 360px;
@@ -333,133 +297,158 @@ display: none;
     background-color: #f5f5f5;
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 1.0);
-    
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.game-categories .gamecard img:hover{
-    transition: .3s;
+.game-categories .gamecard img:hover {
     background-color: #ec8b6b;
     box-shadow: 0 10px 20px #ec8b6b;
 }
 
-label{
-display: none;
-}
-
-.loginwrapper{
+/* Login Form */
+.loginwrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logincontainer{
-      font-size: 18px;
-     font-family: 'arial', sans-serif;
-        width: 400px;
-        max-width: 400px;
-        margin: 1rem;
-        padding: 2rem;
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-        border-radius: 15px;
-        background-color: #fff;
-    }
-    
-    .logincontainer .formTitle{
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    
-    .logincontainer .formMessage{
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    
-    .formMessage--success{
-        color: green;
-    }
-    
-    .formMessage--error{
-        color: rgb(170, 6, 0);
-    }
-    
-    .logincontainer .formInputGroup{
-        margin-bottom: 1rem;
-    }
-    
-    .logincontainer .formInput{
-        display: block;
-        width: 100%;
-        padding: 0.75rem;
-        box-sizing: border-box;
-        border-radius: 30px;
-        border: 1.5px solid #ddd;
-        outline: none;
-        background: #eee;
-        transition: 0.2s;
-    }
-    
-    .logincontainer .formInput:focus{
-        border-color: #ec8b6b;
-        background: #fff;
-    }
-    
-    .logincontainer .formInputSuccess{
-        color: darkgreen;
-        border-color: darkgreen;
+.logincontainer {
+    font-size: 18px;
+    font-family: 'arial', sans-serif;
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.logincontainer .formTitle {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.logincontainer .formMessage {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formMessage--success {
+    color: green;
+}
+
+.formMessage--error {
+    color: rgb(170, 6, 0);
+}
+
+.logincontainer .formInputGroup {
+    margin-bottom: 1rem;
+}
+
+.logincontainer .formInput {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1.5px solid #ddd;
+    outline: none;
+    background: #eee;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.logincontainer .formInput:focus {
+    border-color: #ec8b6b;
+    background: #fff;
+}
+
+.logincontainer .formInputSuccess {
+    color: darkgreen;
+    border-color: darkgreen;
+}
+
+.logincontainer .hidePasswordBtn i {
+    color: #ec8b6b;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.logincontainer .formSubmit {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #ec8b6b, #ed6f9f);
+    transition: font-size 0.2s, background 0.2s;
+}
+
+.logincontainer .formSubmit:hover,
+.logincontainer .formSubmit:active {
+    background: linear-gradient(to right, #ec8b6b, #ed6f9f);
+    font-size: 25px;
+}
+
+.logincontainer .formText {
+    text-align: center;
+}
+
+.logincontainer .formLink {
+    color: #ec8b6b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logincontainer .formLink:hover {
+    text-decoration: underline;
+}
+
+/* Game Forum */
+.game-status-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.game-status {
+    width: 73%;
+    border-bottom: #ffe76f 3px solid;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+    .tos {
+        flex-direction: column;
     }
 
-    .logincontainer .hidePasswordBtn i{
-        color:#ec8b6b;
+    .tos-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .tos-buttons {
+        width: 100%;
         margin-bottom: 10px;
-        margin-left: 10px;
-        cursor: pointer;
     }
 
-    
-    
-    .logincontainer .formSubmit{
-        transition: 0.2s;
-        width: 100%;
-        padding: 1rem 2rem;
-        font-weight: bold;
-        font-size: 1.1rem;
-        color: #fff;
-        border: none;
-        border-radius: 30px;
-        outline: none;
-        cursor: pointer;
-        background: linear-gradient(to right, #ec8b6b, #ed6f9f);
-        font-size: 18px;
+    .tos-buttons button {
+        width: 35%;
     }
-    
-    .logincontainer .formSubmit:hover{
-        transition: 0.2s;
-        background: linear-gradient(to right, #ec8b6b, #ed6f9f);
-        font-size: 25px;
-    
+}
+
+@media only screen and (max-width: 870px) {
+    .footerwrapper {
+        flex-wrap: wrap;
     }
-    
-    .logincontainer .formSubmit:active{
-        transition: 0.2s;
-        background: linear-gradient(to right, #ec8b6b, #ed6f9f);
-        font-size: 22px;
-    
-    }
-    
-    .logincontainer .formText{
-        text-align: center;
-    }
-    
-    .logincontainer .formLink{
-        color: #ec8b6b;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    .logincontainer .formLink:hover{
-        text-decoration: underline;
-    }
+}
 
 
 
