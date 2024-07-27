@@ -84,6 +84,9 @@ include("php/connect.php")
 	<div class="footerwrapper">
 		<div class="footerCol">
 			<h1 class="footerTitle">NEWS</h1>
+			<div class="divider-container">
+				<div class="divider"></div>
+			</div>
 			<ul>
 				<li><a href="#">Latest news articles</a></li>
 				<li><a href="#">Community forums</a></li>
@@ -94,6 +97,9 @@ include("php/connect.php")
 
 		<div class="footerCol">
             <h1 class="footerTitle">ABOUT</h1>
+			<div class="divider-container">
+				<div class="divider"></div>
+			</div>
             <ul>
 				<li><a href="#">Contact us</a></li>
 				<li><a href="#">About us</a></li>
@@ -104,6 +110,9 @@ include("php/connect.php")
 		
         <div class="footerCol">
             <h1 class="footerTitle">FOLLOW US</h1>
+			<div class="divider-container">
+				<div class="divider"></div>
+			</div>
             <ul>
 				<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
                 <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>                
@@ -114,6 +123,9 @@ include("php/connect.php")
 
 		<div class="footerCol">
             <h1 class="footerTitle">SUPPORT</h1>
+			<div class="divider-container">
+				<div class="divider"></div>
+			</div>
             <ul>
 				<li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Help & Support</a></li>
