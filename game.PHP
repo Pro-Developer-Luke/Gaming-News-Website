@@ -34,8 +34,11 @@ include("php/connect.php")
             let title = params.title; // Get the 'title' parameter
             let titleElement = document.getElementById('dynamic-title');
 
+			let statusElement = document.getElementById('game-status');
+
             if (title) {
-                titleElement.textContent = title; // Update the content of the <h3> tag
+                titleElement.textContent = title; // Update the content
+				statusElement.textContent = title + ' online server status is currently' + ' Unknown'; // Update the status of the game (in this case, 'Online')
             } else {
                 titleElement.textContent = 'Default Title'; // Default title if no parameter is provided
             }
@@ -79,14 +82,20 @@ include("php/connect.php")
    </div>
 </header>
 <div class="wrapper">
-	<h3 class="pageTitle" id="dynamic-title">Warzone</h3>
+	<h3 class="pageTitle" id="dynamic-title">Loading Title...</h3>
+
+	<div class="game-status-container">
+	<div class="game-status" id="game-status">
+		<h4>Game Status</h4>
+     </div>
+	 </div>
+
 	<div class="search-container">
 		<div class="search-box">
 				<input class="search-text" id="search-item" type="text" placeholder="Search Specific Articles or Authors" onkeyup="search()">
 				<a class="search-btn" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
 		</div>
 	</div>
-
 </div>
     </body>
 <footer>
